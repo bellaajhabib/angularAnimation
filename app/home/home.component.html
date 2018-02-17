@@ -1,8 +1,8 @@
 <div class="row">
-    <h2>Bienvenue le site des développeurs/randonneurs</h2>
+    <h2>Madame Bovary, Flaubert</h2>
     <div>
-        Toute la journée assis dans un bureau ou un poulaill... open space ?
-        <br>Il est temps de prendre l'air et d'aller randonner.
+      Emma Rouault est la fille d’un fermier normand. Elle épouse Charles Bovary, médiocre officier de médecine. Sa vie avec lui dans une bourgade normande la déçoit beaucoup : elle ne ressemble guère à celle que lui faisait rêver les romans sentimentaux dont elle a abreuvé son imagination dans le couvent où elle a été élevée. Elle tente de rendre sa vie plus exaltante par des liaisons adultères et des achats de luxe. Mais ils la conduiront à sa perte.
+      Par ce roman, dont le réalisme a fait scandale, Flaubert dénonce les méfaits de l’esprit romantique, sans le mépriser pour autant : il a écrit : « Mme Bovary, c’est moi. »
     </div>
 </div>
 <br>
@@ -11,15 +11,7 @@
     <a class="btn btn-danger" (click)="toggle()" *ngIf="open">masquer</a>
     <br>
     <div [@toggleElement]="toggleElement" class="col-md-6">
-        The path of the righteous man is beset on all sides by the iniquities of the selfish
-        and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through
-        the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down
-        upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you
-        will know My name is the Lord when I lay My vengeance upon thee. My money's in that office, right? If she start giving
-        me some bullshit about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head
-        then and there. Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell
-        me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga Winston
-        or anybody else is in there, you the first motherfucker to get shot. You understand?
+      « Nous étions à l’Etude, quand le Proviseur entra, suivi d’un nouveau habillé en bourgeois et d’un garçon de classe qui portait un grand pupitre
     </div>
 </div>
 
@@ -29,7 +21,7 @@
         <div class="citation" [@animateCitation]="animateCitation" (@animateCitation.start)="log($event)" (@animateCitation.done)="log($event)">
             {{ quote.text }}
             <br>
-            <em>{{ quote.author}}</em>    
+            <em>{{ quote.author}}</em>
         </div>
     </div>
 </div>

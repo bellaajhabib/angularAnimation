@@ -7,18 +7,18 @@ import { Component, OnInit, trigger, state, animate, style, transition, keyframe
         .frame { margin-bottom: 10px; padding: 10px; border: 5px solid #eeeeee; height: 170px }
         .citation { font-size: 20px; color: #3268ba }
     `],
-    animations: [       
+    animations: [
 
         trigger('animateCitation', [
 			transition('stateA <=> stateB', [
-				animate(600, keyframes([
+				animate(80, keyframes([
 				style({opacity: .5, offset: 0}),
 				style({opacity: 1, color: '#fcb514', offset: .5}),
 				style({opacity: .7, offset: 1}),
 				style({opacity: 1, offset: 1})
 				]))
 			])
-		]), 
+		]),
 
         // trigger('animateCitation', [
 		// 	transition('stateA <=> stateB', [
@@ -42,17 +42,17 @@ export class HomeComponent  {
     index: number = 0;
     quotes: quote[] = [
         {
-            id: 0, 
+            id: 0,
             text:"En vérité, je ne voyage pas, moi, pour atteindre un endroit précis, mais pour marcher : simple plaisir de voyager. ",
             author: 'Robert Louis Stevenson'
         },
         {
-            id: 2, 
+            id: 2,
             text:"Mon pied droit est jaloux de mon pied gauche. Quand l'un avance, l'autre veut le dépasser. Et moi, comme un imbécile, je marche ! ",
             author: "Raymond Devos"
         },
         {
-            id: 1, 
+            id: 1,
             text:"Le plus long de tous les voyages commence par un tout petit pas",
             author: "proverbe chinois"
         },
@@ -70,7 +70,7 @@ export class HomeComponent  {
         if(this.open) {
             this.toggleElement = 'open';
         } else {
-            this.toggleElement = "closed";            
+            this.toggleElement = "closed";
         }
     }
 
@@ -84,7 +84,7 @@ export class HomeComponent  {
         this.getSomeQuote(1);
     }
 
-    getSomeQuote(increment: number) {       
+    getSomeQuote(increment: number) {
         this.index = this.index + increment;
 
         // if last item of the array and user keeps on going next
